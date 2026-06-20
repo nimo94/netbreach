@@ -1,0 +1,52 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Player {
+  id             String    @id @default(uuid())
+  alias          String    @unique
+  btc_balance    Float     @default(0.0)
+  heat_level     Float     @default(0.0)
+  xp_level       Int       @default(1)
+  
+  sessions       Session[]
+  burned_aliases BurnedAlias[]
+  
+  created_at     DateTime  @default(now())
+  updated_at     DateTime  @updatedAt
+}
+
+model BurnedAlias {
+  id         String   @id @default(uuid())
+  alias_name String
+  player_id  String
+  player     Player   @relation(fields: [player_id], references: [id])
+  burned_at  DateTime @default(now())
+}
+
+model Session {
+  id         String   @id @default(uuid())
+  player_id  String
+  player     Player   @relation(fields: [player_id], references: [id])
+  mission_id String
+  status     String   // "active", "completed", "failed"
+  
+  logs       Log[]
+  
+  started_at DateTime @default(now())
+  ended_at   DateTime?
+}
+
+model Log {
+  id         String   @id @default(uuid())
+  session_id String
+  session    Session  @relation(fields: [session_id], references: [id])
+  command    String
+  ai_notified Boolean @default(false)
+  timestamp  DateTime @default(now())
+}

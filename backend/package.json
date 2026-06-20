@@ -1,0 +1,28 @@
+{
+  "name": "netbreach-backend",
+  "version": "1.0.0",
+  "description": "Backend for NETBREACH",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "fastify": "^4.21.0",
+    "fastify-socket.io": "^4.0.0",
+    "socket.io": "^4.7.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/node": "^20.0.0",
+    "prisma": "^5.0.0",
+    "tsx": "^3.12.7",
+    "typescript": "^5.1.6"
+  }
+}

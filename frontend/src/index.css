@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-nb-app-bg text-gray-300 font-mono;
+  }
+}
+
+/* xterm.js styling overrides to fit the aesthetic */
+.xterm-viewport {
+  background-color: #0a0c10 !important;
+}
+
