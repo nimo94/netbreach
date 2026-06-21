@@ -5,7 +5,7 @@ Welcome to **Netbreach**! An immersive cybersecurity hacking simulation game pow
 **Play the game online:** [https://netbreach-game.web.app](https://netbreach-game.web.app)
 
 <p align="center">
-  <img src="screenshot/homepage.png" alt="Netbreach Homepage" width="800">
+  <img src="Screenshot/homepage.png" alt="Netbreach Homepage" width="800">
 </p>
 
 ---
@@ -13,7 +13,7 @@ Welcome to **Netbreach**! An immersive cybersecurity hacking simulation game pow
 ## 🎮 How to Play
 
 <p align="center">
-  <img src="screenshot/level.png" alt="Target Level Selection" width="800">
+  <img src="Screenshot/level.png" alt="Target Level Selection" width="800">
 </p>
 
 1. **Reconnaissance:** Start by gathering intel on your target.
@@ -22,7 +22,7 @@ Welcome to **Netbreach**! An immersive cybersecurity hacking simulation game pow
    - Use `gobuster` (e.g., `gobuster dir -u http://<ip> -w common.txt`) to find hidden directories.
 
 <p align="center">
-  <img src="screenshot/inventory.png" alt="Tools Inventory" width="600">
+  <img src="Screenshot/inventory.png" alt="Tools Inventory" width="600">
 </p>
 
 2. **Infiltration:** Exploit vulnerabilities to gain access.
@@ -39,7 +39,7 @@ Welcome to **Netbreach**! An immersive cybersecurity hacking simulation game pow
 The neural network learns your patterns! If you get locked out, use utilities like `macchanger -r eth0` or `proxychains bash` to rotate your identity and reset the threat level.
 
 <p align="center">
-  <img src="screenshot/aimetrics.png" alt="AI Neural Matrix" width="800">
+  <img src="Screenshot/aimetrics.png" alt="AI Neural Matrix" width="800">
 </p>
 
 ---
@@ -47,16 +47,16 @@ The neural network learns your patterns! If you get locked out, use utilities li
 ## 💻 Interface & Features
 
 <p align="center">
-  <img src="screenshot/store.png" alt="Upgrades Store" width="400">
-  <img src="screenshot/documentation.png" alt="In-Game Documentation" width="400">
+  <img src="Screenshot/store.png" alt="Upgrades Store" width="400">
+  <img src="Screenshot/documentation.png" alt="In-Game Documentation" width="400">
 </p>
 
 - **Deep Lore & Mechanics:** Read the in-game documentation to understand the tools and countermeasures.
 - **Account Settings & Progression:** Customize your hacker alias and save your progress.
 
 <p align="center">
-  <img src="screenshot/settings.png" alt="Account Settings" width="400">
-  <img src="screenshot/signin_netbreach.png" alt="Sign In Screen" width="400">
+  <img src="Screenshot/settings.png" alt="Account Settings" width="400">
+  <img src="Screenshot/signin_netbreach.png" alt="Sign In Screen" width="400">
 </p>
 
 ---
